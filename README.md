@@ -1,5 +1,9 @@
 Device Used: Raspberry-Pi
+
+
 Language: Python
+
+
 Cloud: Thingspeak
 
 1. The program reads the current cloud data and initialize all arrays at the start-up of the program.
