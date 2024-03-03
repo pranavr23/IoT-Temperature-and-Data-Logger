@@ -165,7 +165,7 @@ a = [0, 1, 2, 3, 4]
 # 4 i.e E) Humidity
 
 k = 0 # used for selection of measurement
-# 3.4.1 Visualization with respect to button
+#  Visualization with respect to button
 # Press button for 2 seconds
 while True:
     print("Button is not pressed! - press for 2 sec to change", k, 'time', t)
