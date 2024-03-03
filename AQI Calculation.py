@@ -63,7 +63,7 @@ for i in field_3a:  # for pm10
 print(aqi_pm25)
 print(aqi_pm10)
 
-# .............3.3.2 Transfer AQI levels to a new cloud channel
+# .............Transfer AQI levels to a new cloud channel
 Maximum_AQI = []
 z = 0
 while z < 100:
