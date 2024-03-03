@@ -9,7 +9,7 @@ import time
 RPi.setmode(RPi.BCM)
 RPi.setwarnings(False)
 
-#----------- 3.1.1 Accessing the thinkspeak Channel--------------
+#----------- Accessing the thinkspeak Channel--------------
 channel_id = 1838967
 write_key = 'HO54N08LMMADQWBQ'
 channel = thingspeak.Channel(id=channel_id, api_key=write_key)
