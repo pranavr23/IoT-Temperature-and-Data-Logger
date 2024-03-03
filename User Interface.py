@@ -35,7 +35,7 @@ while 1:
     print("Button is pressed! - press for 2 sec to change", k)
     if (k >= 0) & (k <= 4): # this system always starts with the indication of measurement A) PM1.0
         with canvas(device) as draw:
-            draw.line([a[k], 0, a[k], 0], fill="white") # 3.4.1 Matrix LED display shows the actual indication of measurement selected
+            draw.line([a[k], 0, a[k], 0], fill="white") #  Matrix LED display shows the actual indication of measurement selected
         sleep(0.5)
         # Press button for 2 seconds
         if not RPi.input(PinButtonRight): # List of measurement in Right Direction
@@ -71,14 +71,14 @@ while 1:
             mean_PM1 = mean_field1
             StrMeasurement = str(float(round(mean_PM1, 2)))
             for y in range(0, len(StrMeasurement)):
-                segment_7SD.set_digit(y, StrMeasurement[y], decimal=False) # 3.4.2 Display mean values on the seven segment display (7SD)
+                segment_7SD.set_digit(y, StrMeasurement[y], decimal=False) # Display mean values on the seven segment display (7SD)
                 segment_7SD.set_decimal(1, 1)
             segment_7SD.write_display()
             bh = []
             for j in range(0, 8):
                 adding = 0
                 z = 0
-                for i in range((j * 12), ((j * 12) + 12)): # 3.4.3 Division of 100 datas into 8 different periods
+                for i in range((j * 12), ((j * 12) + 12)): # Division of 100 datas into 8 different periods
                     adding = adding + field_1a[i]
                     z = z + 1
                 #print(z)
@@ -89,7 +89,7 @@ while 1:
                 #print(bh)
             with canvas(device) as draw:
                 for i in range(0, 8):
-                    draw.line([i, 8 - bh[i], i, 8 - bh[i]], fill="white") # 3.4.3 Visualizing the measurements on the Matrix LED Display (MLD)
+                    draw.line([i, 8 - bh[i], i, 8 - bh[i]], fill="white") # Visualizing the measurements on the Matrix LED Display (MLD)
             sleep(0.8)
 
         if k == 1: # iteration of condition code for PM2.5
