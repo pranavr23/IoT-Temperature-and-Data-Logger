@@ -1,7 +1,3 @@
-# This assignment was completed as a group task with equal contributions from each of the members-
-# Keshav Verma(MAT num -30301933),
-# Pranav Raghu Ram (MAT num -30304158)
-# Jubin Thomas (MAT num -30233838)
 
 from main import field_2a
 from main import field_3a
