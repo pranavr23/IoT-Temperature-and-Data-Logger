@@ -1,6 +1,3 @@
-
-
-
 # .......... User Interface
 import RPi.GPIO as RPi
 from luma.core.interface.serial import spi, noop

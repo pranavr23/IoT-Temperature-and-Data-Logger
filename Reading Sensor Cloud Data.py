@@ -1,5 +1,3 @@
-
-
 import json
 from statistics import mean
 import matplotlib.pyplot as plt

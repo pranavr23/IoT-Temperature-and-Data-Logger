@@ -1,5 +1,3 @@
-
-
 import json
 from statistics import mean
 import RPi.GPIO as RPi

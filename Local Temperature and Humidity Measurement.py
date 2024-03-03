@@ -1,5 +1,3 @@
-
-
 # .......Local temperature and Humidity Measurement........
 
 
